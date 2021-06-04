@@ -1,0 +1,46 @@
+/*formulario*/
+form {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  color: rgb(9, 54, 90);
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  align-content: center;
+}
+
+.cuadro1 {
+  margin: 1cm;
+  padding: 2cm;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(9, 54, 90);
+  border: 1px solid rgb(9, 54, 90);
+}
+
+.cuadro2 {
+  margin: 1cm;
+  padding: 2.5cm;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(9, 54, 90);
+  border: 1px solid rgb(9, 54, 90);
+}
+
+.cuadro3 {
+  margin: 1cm;
+  padding: 1cm;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(9, 54, 90);
+  border: 1px solid rgb(9, 54, 90);
+}
+
+.cuadro4 {
+  margin: 1cm;
+  padding: 3cm;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(9, 54, 90);
+  border: 1px solid rgb(9, 54, 90);
+}

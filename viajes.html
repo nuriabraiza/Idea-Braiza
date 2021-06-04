@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viajes</title>
+    <link rel="stylesheet" href="./CSS/viajes.css">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div id="container1">
+      <!--Inicio Menu-->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: url(./Imagenes/fondo2.jpg);">
+          <a class="navbar-brand" href="index.html"><img src="./Imagenes/logo.png" alt="logo" height="60" width="80" id="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="viajes.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  VIAJES
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Europa</a>
+                  <a class="dropdown-item" href="#">Asia</a>
+                  <a class="dropdown-item" href="#">América del Norte</a>
+                  <a class="dropdown-item" href="#">América del Sur</a>
+                  <a class="dropdown-item" href="#">Africa</a>
+                  <a class="dropdown-item" href="#">Oceania</a>
+                  <a class="dropdown-item" href="#">América Central</a>
+                  <a class="dropdown-item" href="#">Sudeste Asiático</a>
+                  <a class="dropdown-item" href="#">Caribe</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tips_tricks.html">TIPS & TRICKS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+          <!--Fin Menu-->   
+        </header>
+          <!--Inicio Galeria de fotos que sirve como link a Viajes-->
+          <main>
+            <a href="viajes.html"><img src="./Imagenes/galeria.jpg" alt="galeria" width="100%"/></a>
+            <!--Fin Galeria de fotos que sirve como link a Viajes-->
+              <div class="text">
+                <!--Inicio Titular-->
+                <h1>VIAJEMOS JUNTOS</h1>
+                <p><h3>¿Ya sabes a dónde queres ir?</h2></p>
+              </div>
+          </main>
+      
+      <!--Fin titular-->
+
+    <!--Inicio Introduccion-->
+        <section class="info">
+          <div align="center">
+              <p><h4>¿Cómo decidir tu próximo destino?</h4></p>
+              <p>Al momento de decidir a donde tenes ganas de ir, primero hay que tener en cuenta diferentes factores. Presupuesto, actividades, transporte, clima, idioma, etc. Aca te dejamos un poco de todo para que te sea más facil elegir!</p>  
+          </div>
+        </section>
+    <!--Fin Introduccion-->
+
+    <!--Inicio Seccion-->
+      <section>
+        <div align="center" id="grilla">
+          <aside id="blank"></aside>
+          
+        <table cellspacing="20" class="viaje" id="table">
+          <tr>
+            <th>
+              Europa
+            </th>
+            <th>
+                  Asia
+            </th>
+            <th>
+              América del Norte
+            </th>
+          </tr>
+          <tr>
+            <td id="tabla2">
+              <ul>
+                  <li>España</li>
+                  <li>Francia</li>
+                  <li>Alemania</li>
+              </ul>
+            </td>
+            <td id="tabla2">
+              <ul>
+                  <li>China</li>
+                  <li>Japon</li>
+                  <li>Corea</li>
+              </ul>
+            </td>
+            <td id="tabla2">
+                <ul>
+                    <li>Estados Unidos</li>
+                    <li>Canada</li>
+                    <li>Mexico</li>
+                </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              América del Sur
+            </th>
+            <th>
+              Africa
+            </th>
+            <th>
+              Oceania
+            </th>
+          </tr>
+          <tr>
+            <td id="tabla2">
+              <ul>
+                  <li>Argentina</li>
+                  <li>Peru</li>
+                  <li>Colombia</li>
+              </ul>
+            </td>
+            <td id="tabla2">
+              <ul>
+                  <li>Sudafrica</li>
+                  <li>Egipto</li>
+                  <li>Marruecos</li>
+              </ul>
+            </td>
+            <td id="tabla2">
+              <ul>
+                  <li>Australia</li>
+                  <li>Nueva Zelanda</li>
+                  <li>Fiji</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              América Central
+            </th>
+            <th>
+              Sudeste Asiatico
+            </th>
+            <th>
+              Caribe
+            </th>
+          </tr>
+          <tr>
+            <td id="tabla2">
+              <ul>
+                  <li>Costa Rica</li>
+                  <li>Panama</li>
+                  <li>Belice</li>
+              </ul>
+            </td>
+            <td id="tabla2">
+              <ul>
+                  <li>Tailandia</li>
+                  <li>Filipinas</li>
+                  <li>Singapur</li>
+              </ul>
+            </td>
+            <td id="tabla2">
+              <ul>
+                  <li>Bahamas</li>
+                  <li>Jamaica</li>
+                  <li>Cuba</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        </div>
+      </section>
+    <!--Fin Seccion-->
+
+    <hr />
+    <!--Incio pie de pagina-->
+    <footer>
+      <div id="pie">
+        <nav>
+          <ul align="left">
+            <a href="index.html"><li>INICIO</li></a>
+            <a href="contacto.html"><li>CONTACTO</li></a>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!--Fin pie de pagina-->
+    
+  </body>
+</html>

@@ -1,0 +1,54 @@
+/*Condiciones Sections*/
+#container1 .section div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#container1 section h4 {
+  font-size: 25px;
+  font-family: "Work Sans", sans-serif;
+}
+
+#container1 section p {
+  padding: 15px 0;
+  line-height: 32px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.info {
+  padding: 5cm;
+  padding-top: 0cm;
+  padding-bottom: 0cm;
+  display: grid;
+  grid-template-rows: repeat(3, 400px);
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.info #uno {
+  margin: 1cm;
+  padding: 1cm;
+  padding-bottom: 0.5cm;
+  border: 1px solid rgb(9, 54, 90);
+}
+
+.info #dos {
+  margin: 1cm;
+  padding: 1cm;
+  border: 1px solid rgb(9, 54, 90);
+}
+.info #tres {
+  margin: 1cm;
+  padding: 1cm;
+  border: 1px solid rgb(9, 54, 90);
+}
+
+.info #cuatro {
+  margin: 1cm;
+  padding: 1cm;
+  border: 1px solid rgb(9, 54, 90);
+}
+
+.info p {
+  text-align: justify;
+}
