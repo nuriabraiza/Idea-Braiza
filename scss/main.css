@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(../Imagenes/fondo2.jpg);
+  background-image: url(./Imagenes/fondo2.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -118,7 +118,7 @@ body {
     font-size: 20px;
   }
   header .navbar-nav .nav-item .dropdown-menu {
-    background-image: url(../Imagenes/fondo2.jpg);
+    background-image: url(./Imagenes/fondo2.jpg);
     background-position: top left;
   }
   header .navbar-nav .nav-item .dropdown-menu .dropdown-item {
