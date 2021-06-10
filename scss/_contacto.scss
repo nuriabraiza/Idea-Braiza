@@ -1,0 +1,63 @@
+$main-color: rgb(9, 54, 90);
+$title: 70px;
+$bold-title: bolder;
+$bold-sub: 700;
+$bold-text: bold;
+
+.container-fluid {
+  main {
+    h1 {
+      text-align: center;
+      font-size: $title;
+      font-weight: $bold-title;
+    }
+    h3 {
+      text-align: center;
+      padding: 0.5cm;
+      font-weight: 600;
+    }
+    form {
+      font-weight: $bold-text;
+      color: $main-color;
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      justify-content: center;
+      align-content: center;
+
+      .cuadro1 {
+        margin: 1cm;
+        padding: 2cm;
+        text-align: center;
+        font-size: 20px;
+        border: 1px solid rgb(9, 54, 90);
+      }
+
+      .cuadro2 {
+        margin: 1cm;
+        padding: 2.5cm;
+        text-align: center;
+        font-family: "Work Sans", sans-serif;
+        color: rgb(9, 54, 90);
+        border: 1px solid rgb(9, 54, 90);
+      }
+
+      .cuadro3 {
+        margin: 1cm;
+        padding: 1cm;
+        text-align: center;
+        font-family: "Work Sans", sans-serif;
+        color: rgb(9, 54, 90);
+        border: 1px solid rgb(9, 54, 90);
+      }
+
+      .cuadro4 {
+        margin: 1cm;
+        padding: 3cm;
+        text-align: center;
+        font-family: "Work Sans", sans-serif;
+        color: rgb(9, 54, 90);
+        border: 1px solid rgb(9, 54, 90);
+      }
+    }
+  }
+}

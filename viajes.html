@@ -4,209 +4,382 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viajes</title>
-    <link rel="stylesheet" href="./CSS/viajes.css">
-    <link rel="stylesheet" href="./CSS/estilos.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
+    <link rel="stylesheet" href="../scss/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Viajes</title>
   </head>
   <body>
-    <div id="container1">
-      <!--Inicio Menu-->
+    <div class="container-fluid">
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: url(./Imagenes/fondo2.jpg);">
-          <a class="navbar-brand" href="index.html"><img src="./Imagenes/logo.png" alt="logo" height="60" width="80" id="logo"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item ">
-                <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-              </li>
-              <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="viajes.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  VIAJES
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Europa</a>
-                  <a class="dropdown-item" href="#">Asia</a>
-                  <a class="dropdown-item" href="#">América del Norte</a>
-                  <a class="dropdown-item" href="#">América del Sur</a>
-                  <a class="dropdown-item" href="#">Africa</a>
-                  <a class="dropdown-item" href="#">Oceania</a>
-                  <a class="dropdown-item" href="#">América Central</a>
-                  <a class="dropdown-item" href="#">Sudeste Asiático</a>
-                  <a class="dropdown-item" href="#">Caribe</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="tips_tricks.html">TIPS & TRICKS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">CONTACTO</a>
-              </li>
-            </ul>
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light"
+          style="background-image: url(../Imagenes/fondo2.jpg)"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><img
+                src="../Imagenes/logo.png"
+                alt=""
+                height="60"
+                width="80"
+                id="logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >INICIO</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="viajes.html">VIAJES</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="viajes.html"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Europa</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Asia</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">América del Norte</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">América del Sur</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Africa</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Oceania</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">América Central</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Sudeste Asiático</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Caribe</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tips_tricks.html">TIPS & TRICKS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">CONTACTO</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
-          <!--Fin Menu-->   
-        </header>
-          <!--Inicio Galeria de fotos que sirve como link a Viajes-->
-          <main>
-            <a href="viajes.html"><img src="./Imagenes/galeria.jpg" alt="galeria" width="100%"/></a>
-            <!--Fin Galeria de fotos que sirve como link a Viajes-->
-              <div class="text">
-                <!--Inicio Titular-->
-                <h1>VIAJEMOS JUNTOS</h1>
-                <p><h3>¿Ya sabes a dónde queres ir?</h2></p>
-              </div>
-          </main>
-      
-      <!--Fin titular-->
+      </header>
 
-    <!--Inicio Introduccion-->
-        <section class="info">
-          <div align="center">
-              <p><h4>¿Cómo decidir tu próximo destino?</h4></p>
-              <p>Al momento de decidir a donde tenes ganas de ir, primero hay que tener en cuenta diferentes factores. Presupuesto, actividades, transporte, clima, idioma, etc. Aca te dejamos un poco de todo para que te sea más facil elegir!</p>  
-          </div>
+      <main>
+        <a href="viajes.html"
+          ><img src="../Imagenes/galeria.jpg" class="img-fluid" alt="galeria"
+        /></a>
+        <h1>VIAJEMOS JUNTOS</h1>
+        <h3>¿Ya sabes a dónde queres ir?</h3>
+
+        <section class="section__intro">
+          <h4>¿Cómo decidir tu próximo destino?</h4>
+          <p>
+            Al momento de decidir a donde tenes ganas de ir, primero hay que
+            tener en cuenta diferentes factores. Presupuesto, actividades,
+            transporte, clima, idioma, etc. Aca te dejamos un poco de todo para
+            que te sea más facil elegir!
+          </p>
         </section>
-    <!--Fin Introduccion-->
 
-    <!--Inicio Seccion-->
-      <section>
-        <div align="center" id="grilla">
+        <section class="section__main">
           <aside id="blank"></aside>
-          
-        <table cellspacing="20" class="viaje" id="table">
-          <tr>
-            <th>
-              Europa
-            </th>
-            <th>
-                  Asia
-            </th>
-            <th>
-              América del Norte
-            </th>
-          </tr>
-          <tr>
-            <td id="tabla2">
-              <ul>
-                  <li>España</li>
-                  <li>Francia</li>
-                  <li>Alemania</li>
-              </ul>
-            </td>
-            <td id="tabla2">
-              <ul>
-                  <li>China</li>
-                  <li>Japon</li>
-                  <li>Corea</li>
-              </ul>
-            </td>
-            <td id="tabla2">
-                <ul>
-                    <li>Estados Unidos</li>
-                    <li>Canada</li>
-                    <li>Mexico</li>
-                </ul>
-            </td>
-          </tr>
-          <tr>
-            <th>
-              América del Sur
-            </th>
-            <th>
-              Africa
-            </th>
-            <th>
-              Oceania
-            </th>
-          </tr>
-          <tr>
-            <td id="tabla2">
-              <ul>
-                  <li>Argentina</li>
-                  <li>Peru</li>
-                  <li>Colombia</li>
-              </ul>
-            </td>
-            <td id="tabla2">
-              <ul>
-                  <li>Sudafrica</li>
-                  <li>Egipto</li>
-                  <li>Marruecos</li>
-              </ul>
-            </td>
-            <td id="tabla2">
-              <ul>
-                  <li>Australia</li>
-                  <li>Nueva Zelanda</li>
-                  <li>Fiji</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <th>
-              América Central
-            </th>
-            <th>
-              Sudeste Asiatico
-            </th>
-            <th>
-              Caribe
-            </th>
-          </tr>
-          <tr>
-            <td id="tabla2">
-              <ul>
-                  <li>Costa Rica</li>
-                  <li>Panama</li>
-                  <li>Belice</li>
-              </ul>
-            </td>
-            <td id="tabla2">
-              <ul>
-                  <li>Tailandia</li>
-                  <li>Filipinas</li>
-                  <li>Singapur</li>
-              </ul>
-            </td>
-            <td id="tabla2">
-              <ul>
-                  <li>Bahamas</li>
-                  <li>Jamaica</li>
-                  <li>Cuba</li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-        </div>
-      </section>
-    <!--Fin Seccion-->
+          <table cellspacing="20" class="viaje" id="table">
+            <tr>
+              <th>
+                <div
+                  id="carouselExampleDark"
+                  class="carousel carousel-dark slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="3"
+                      aria-label="Slide 4"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="4"
+                      aria-label="Slide 5"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="5"
+                      aria-label="Slide 6"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="6"
+                      aria-label="Slide 7"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="7"
+                      aria-label="Slide 8"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="8"
+                      aria-label="Slide 9"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                      <a href="#"
+                        ><img
+                          src="../Imagenes/viajes/alemania.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                      /></a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-dark">
+                          <a href="#">Europa</a>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <a href="#"
+                        ><img
+                          src="../Imagenes/viajes/corea.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                      /></a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-dark">
+                          <a href="#">Asia</a>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <a href="#"
+                        ><img
+                          src="../Imagenes/viajes/canada.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                      /></a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-dark">
+                          <a href="#">América del Norte</a>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <a href="#"
+                        ><img
+                          src="../Imagenes/viajes/cordillera.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                      /></a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-dark">
+                          <a href="#">América del Sur</a>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <a href="#"
+                        ><img
+                          src="../Imagenes/viajes/safari.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                      /></a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-dark">
+                          <a href="#">Africa</a>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <a href="#"
+                        ><img
+                          src="../Imagenes/viajes/australia.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                      /></a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-dark">
+                          <a href="#">Oceania</a>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <a href="#"
+                        ><img
+                          src="../Imagenes/viajes/panama.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                      /></a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-dark">
+                          <a href="#">América Central</a>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <a href="#"
+                        ><img
+                          src="../Imagenes/viajes/singapur.jpeg"
+                          class="d-block w-100"
+                          alt="..."
+                      /></a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-dark">
+                          <a href="#">Sudeste Asiático</a>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <a href="#"
+                        ><img
+                          src="../Imagenes/viajes/bahamas.jpg"
+                          class="d-block w-100"
+                          alt="..."
+                      /></a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-dark">
+                          <a href="#">Caribe</a>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </th>
+            </tr>
+          </table>
+          <aside id="blank"></aside>
+        </section>
+      </main>
 
-    <hr />
-    <!--Incio pie de pagina-->
-    <footer>
-      <div id="pie">
-        <nav>
-          <ul align="left">
-            <a href="index.html"><li>INICIO</li></a>
-            <a href="contacto.html"><li>CONTACTO</li></a>
-          </ul>
-        </nav>
-      </div>
-    </footer>
-    <!--Fin pie de pagina-->
-    
+      <footer class="container-fluid__footer">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              ><img
+                src="../Imagenes/home.png"
+                alt="inicio"
+                height="60"
+                width="60"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html"
+              ><img
+                src="../Imagenes/contacto.png"
+                alt="contacto"
+                height="60"
+                width="60"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

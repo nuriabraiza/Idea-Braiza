@@ -1,0 +1,228 @@
+$main-color: rgb(9, 54, 90);
+$title: 70px;
+$bold-title: bolder;
+$bold-sub: 600;
+$bold-text: bold;
+
+//SCSS whole website//
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(9, 54, 90);
+}
+
+body {
+  background-image: url(../Imagenes/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+
+  nav {
+    padding-left: 1cm;
+    padding-right: 1cm;
+    width: 100%;
+    a #logo {
+      animation-name: logo;
+      animation-iteration-count: 1;
+      animation-duration: 3s;
+      animation-timing-function: ease-in;
+    }
+
+    @keyframes logo {
+      0% {
+        opacity: 0%;
+      }
+      100% {
+        opacity: 100%;
+      }
+    }
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+    .nav-link {
+      color: $main-color;
+      font-style: oblique;
+      font-weight: $bold-title;
+      font-size: 20px;
+    }
+  }
+  .container-fluid__footer {
+    border-top: 1px solid $main-color;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+
+    .nav-link {
+      color: $main-color;
+      img {
+        opacity: 50%;
+        margin: 0.2cm;
+      }
+      img:hover {
+        transform: scale(1.5, 1.5);
+        opacity: 90%;
+      }
+    }
+  }
+}
+
+//Media Queries MAIN//
+
+@media (max-width: 577px) {
+  header {
+    #logo {
+      height: 40px;
+      width: 60px;
+    }
+    .navbar-toggler-icon {
+      height: 20px;
+      width: 20px;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-size: 15px;
+        }
+        .dropdown-item {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .container-fluid__footer {
+    img {
+      opacity: 50%;
+      padding: 0;
+      margin: 0;
+      height: 35px;
+      width: 35px;
+    }
+  }
+}
+
+@media (min-width: 578px) {
+  header {
+    #logo {
+      height: 50px;
+      width: 70px;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-size: 20px;
+        }
+        .dropdown-menu {
+          background-image: url(../Imagenes/fondo2.jpg);
+          background-position: top left;
+          .dropdown-item {
+            font-size: 20px;
+            font-weight: $bold-sub;
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+  .container-fluid__footer {
+    img {
+      opacity: 50%;
+      margin: 0.1cm;
+      height: 45px;
+      width: 45px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    #logo {
+      height: 50px;
+      width: 70px;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-size: 20px;
+        }
+        .dropdown-item {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .container-fluid__footer {
+    img {
+      opacity: 50%;
+      margin: 0.1cm;
+      height: 55px;
+      width: 55px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    #logo {
+      height: 60px;
+      width: 80px;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-size: 20px;
+        }
+        .dropdown-item {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .container-fluid__footer {
+    img {
+      opacity: 50%;
+      margin: 0.1cm;
+      height: 65px;
+      width: 65px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    #logo {
+      height: 60px;
+      width: 80px;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-size: 25px;
+        }
+        .dropdown-item {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  .container-fluid__footer {
+    img {
+      opacity: 50%;
+      margin: 0.3cm;
+      height: 70px;
+      width: 70px;
+    }
+  }
+}
+
+//Imports//
+
+@import "index";
+@import "nosotros";
+@import "viajes";
+@import "tipstricks";
+@import "contacto";

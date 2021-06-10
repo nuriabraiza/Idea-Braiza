@@ -4,124 +4,391 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tips & Tricks</title>
-    <link rel="stylesheet" href="./CSS/tips_tricks.css">
-    <link rel="stylesheet" href="./CSS/estilos.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
+    <link rel="stylesheet" href="../scss/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tips & Tricks</title>
   </head>
-  <body>  
-    <div id="container1">
-        <!--Inicio Menu-->
-        <header>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: url(./Imagenes/fondo2.jpg);">
-            <a class="navbar-brand" href="index.html"><img src="./Imagenes/logo.png" alt="logo" height="60" width="80" id="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <body>
+    <div class="container-fluid">
+      <header>
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light"
+          style="background-image: url(../Imagenes/fondo2.jpg)"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><img
+                src="../Imagenes/logo.png"
+                alt=""
+                height="60"
+                width="80"
+                id="logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >INICIO</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="nosotros.html">NOSOTROS</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="viajes.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    VIAJES
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Europa</a>
-                    <a class="dropdown-item" href="#">Asia</a>
-                    <a class="dropdown-item" href="#">América del Norte</a>
-                    <a class="dropdown-item" href="#">América del Sur</a>
-                    <a class="dropdown-item" href="#">Africa</a>
-                    <a class="dropdown-item" href="#">Oceania</a>
-                    <a class="dropdown-item" href="#">América Central</a>
-                    <a class="dropdown-item" href="#">Sudeste Asiático</a>
-                    <a class="dropdown-item" href="#">Caribe</a>
-                  </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="viajes.html">VIAJES</a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="tips_tricks.html">TIPS & TRICKS</a>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="viajes.html"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Europa</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Asia</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">América del Norte</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">América del Sur</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Africa</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Oceania</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">América Central</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Sudeste Asiático</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Caribe</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="tips_tricks.html"
+                    >TIPS & TRICKS</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contacto.html">CONTACTO</a>
                 </li>
               </ul>
             </div>
-          </nav>
-            <!--Fin Header Menu-->
+          </div>
+        </nav>
+      </header>
 
-            <!--Inicio Galeria de fotos que sirve como link a Viajes-->
-              <main>
-                <a href="viajes.html"><img src="./Imagenes/galeria.jpg" alt="galeria" width="100%"/></a>
-                <!--Fin Galeria de fotos que sirve como link a Viajes-->
-                  <div class="text">
-                    <!--Inicio Titular-->
-                    <h1>VIAJEMOS JUNTOS</h1>
-                    <p><h3>Algunos trucos para viajar</h2></p>
-                  </div>
-              </main>
-          </header>
-        <!--Fin Titular-->
- 
-        <!--Inicio Seccion-->
-        <section class="info">
-          <!--Inicio parte 1--> 
-          <div align="center" id="uno">
-                
-                <p><h4>Mejor Momento para Viajar</h4></p>
-                <p>Cada uno tiene su estación del año preferida y, aunque no lo creas, es algo que muchisima gente tiene en cuenta al momento de decidir cuando viajar. En los meses de verano de junio, julio, agosto y septiembre Europa se caracteriza por un clima cálido mientras que en otros continentes como Asia o África el clima en estos meses es totalmente diferente y lo mismo podemos aplicar a los meses de invierno. Si en Alemania las temperaturas están por debajo de los 0°, en otra parte del mundo en el mismo momento las temperaturas pueden estar superando los 30° y esto va a marcar el tipo de turismo que puedas realizar en cada destino. </p>           
+      <main>
+        <a href="viajes.html"
+          ><img src="../Imagenes/galeria.jpg" class="img-fluid" alt="galeria"
+        /></a>
+        <h1>VIAJEMOS JUNTOS</h1>
+        <h3>Algunos trucos para viajar</h3>
+
+        <section class="section-small">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2
+                class="accordion-header accordion-header__title"
+                id="headingOne"
+              >
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Mejor Momento para Viajar
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="accordion-body__text">
+                    Cada uno tiene su estación del año preferida y, aunque no lo
+                    creas, es algo que muchisima gente tiene en cuenta al
+                    momento de decidir cuando viajar. En los meses de verano de
+                    junio, julio, agosto y septiembre Europa se caracteriza por
+                    un clima cálido mientras que en otros continentes como Asia
+                    o África el clima en estos meses es totalmente diferente y
+                    lo mismo podemos aplicar a los meses de invierno. Si en
+                    Alemania las temperaturas están por debajo de los 0°, en
+                    otra parte del mundo en el mismo momento las temperaturas
+                    pueden estar superando los 30° y esto va a marcar el tipo de
+                    turismo que puedas realizar en cada destino.
+                  </p>
+                </div>
+              </div>
             </div>
-            <!--fin parte 1--> 
-            <!--inicio parte 2-->
-            <div align="center" id="dos">
-                
-                <p><h4>Hoteles</h4></p>
-                <p>Debes tener claros tus parámetros y los de tus compañeros de viaje en cuestiones de hospedaje, un lugar que no te guste o que no se acomode a lo que queres puede ser determinante. Pensa en el tipo de hotel que estás esperando, hay muchas opciones, cada una ofrece servicios diferentes. Para este paso, tenes que decidir si preferis un hotel moderno, experimentar un hotel de arquitectura antigua o si te inclinas por los hoteles de cadena. También tenes la opción de elegir algo más privado como un Airbnb o una cabaña.</p>
+            <div class="accordion-item">
+              <h2
+                class="accordion-header accordion-header__title"
+                id="headingTwo"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Hoteles
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="accordion-body__text">
+                    Debes tener claros tus parámetros y los de tus compañeros de
+                    viaje en cuestiones de hospedaje, un lugar que no te guste o
+                    que no se acomode a lo que queres puede ser determinante.
+                    Pensa en el tipo de hotel que estás esperando, hay muchas
+                    opciones, cada una ofrece servicios diferentes. Para este
+                    paso, tenes que decidir si preferis un hotel moderno,
+                    experimentar un hotel de arquitectura antigua o si te
+                    inclinas por los hoteles de cadena. Un aspecto importante es
+                    conocer de antemano los servicios con los que cuenta el
+                    hotel. Si el establecimiento posee restaurante, piscina,
+                    parking, por poner tres ejemplos, el cliente puede tener más
+                    clara la decisión si pretende que la escapada tenga un
+                    aspecto más o menos especial.
+                  </p>
+                </div>
+              </div>
             </div>
-            <!--fin parte 2-->
-            <!--Inicio parte 3-->
-            <div align="center" id="tres">
-                
-                <p><h4>Itinerario</h4></p>
-                <p>No es lo mismo una escapada de fin de semana que un viaje de una, dos o tres semanas. Planificar cualquiera de ellos tampoco tiene nada que ver. Si tenes pocos días de vacaciones nunca será recomendable hacer un viaje por ejemplo a Australia. Perderás mucho tiempo en vuelos y tendrás poco para disfrutar de la ciudad. Será más conveniente que busques un destino cerca de tu ciudad de residencia y que las horas de vuelo y el jet lag no se coma tus días de viaje.</p>
+            <div class="accordion-item">
+              <h2
+                class="accordion-header accordion-header__title"
+                id="headingThree"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Itinerario
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="accordion-body__text">
+                    No es lo mismo una escapada de fin de semana que un viaje de
+                    semanas. Si tenes pocos días de vacaciones nunca será
+                    recomendable hacer un viaje por ejemplo a Australia.
+                    Perderás mucho tiempo en vuelos y tendrás poco para
+                    disfrutar de la ciudad. Será más conveniente que busques un
+                    destino cerca de tu ciudad de residencia y que las horas de
+                    vuelo y el jet lag no se coma tus días de viaje. Armar un
+                    itinerario de viaje no es algo lineal. A lo largo del
+                    proceso, lo vas a revisar y a ajustar, mil veces. Lo vas a
+                    dar vuelta, vas a poner y a sacar items. Este proceso es
+                    algo completamente dinámico y se contruye a partir de la
+                    investigación para poder tomar las mejores decisiones.
+                  </p>
+                </div>
+              </div>
             </div>
-            <!--fin parte 3-->
-            <div align="center" id="cuatro">
-              
-              <p><h4>Presupuesto</h4></p>
-              <p>Va a variar segun el destino y las actividades que tengas pensado hacer, pero siempre se puede ajustar a las necesidades de uno. Te ayudamos a armarlo para que no tengas que romperte la cabeza con los números.</p>
+            <div class="accordion-item">
+              <h2
+                class="accordion-header accordion-header__title"
+                id="headingFour"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Presupuesto
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="accordion-body__text">
+                    Un presupuesto es esencial en todo viaje ya que te da una
+                    idea aproximada de cuanta plata tenes que juntar para poder
+                    hacerlo realidad, es la forma más sencilla de aterrizar los
+                    sueños para empezar a trabajar en ellos poco a poco. Va a
+                    variar segun el destino, duración del viaje y las
+                    actividades que tengas pensado hacer, pero siempre se puede
+                    ajustar a las necesidades de uno. Luego de armar el marco
+                    del viaje, es importante calcular un monto de gasto diario
+                    para empezar a tener numeros establecidos. Te ayudamos a
+                    armarlo para que no tengas que romperte la cabeza con los
+                    cálculos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-large">
+          <div align="center" id="viajar">
+            <h4>Mejor Momento para Viajar</h4>
+            <p>
+              Cada uno tiene su estación del año preferida y, aunque no lo
+              creas, es algo que muchisima gente tiene en cuenta al momento de
+              decidir cuando viajar. En los meses de verano de junio, julio,
+              agosto y septiembre Europa se caracteriza por un clima cálido
+              mientras que en otros continentes como Asia o África el clima en
+              estos meses es totalmente diferente y lo mismo podemos aplicar a
+              los meses de invierno. Si en Alemania las temperaturas están por
+              debajo de los 0°, en otra parte del mundo en el mismo momento las
+              temperaturas pueden estar superando los 30° y esto va a marcar el
+              tipo de turismo que puedas realizar en cada destino.
+            </p>
+          </div>
+
+          <div align="center" id="hotel">
+            <h4>Hoteles</h4>
+            <p>
+              Debes tener claros tus parámetros y los de tus compañeros de viaje
+              en cuestiones de hospedaje, un lugar que no te guste o que no se
+              acomode a lo que queres puede ser determinante. Pensa en el tipo
+              de hotel que estás esperando, hay muchas opciones, cada una ofrece
+              servicios diferentes. Para este paso, tenes que decidir si
+              preferis un hotel moderno, experimentar un hotel de arquitectura
+              antigua o si te inclinas por los hoteles de cadena. Un aspecto
+              importante es conocer de antemano los servicios con los que cuenta
+              el hotel. Si el establecimiento posee restaurante, piscina,
+              parking, por poner tres ejemplos, el cliente puede tener más clara
+              la decisión si pretende que la escapada tenga un aspecto más o
+              menos especial.
+            </p>
+          </div>
+
+          <div align="center" id="itin">
+            <h4>Itinerario</h4>
+            <p>
+              No es lo mismo una escapada de fin de semana que un viaje de
+              semanas. Si tenes pocos días de vacaciones nunca será recomendable
+              hacer un viaje por ejemplo a Australia. Perderás mucho tiempo en
+              vuelos y tendrás poco para disfrutar de la ciudad. Será más
+              conveniente que busques un destino cerca de tu ciudad de
+              residencia y que las horas de vuelo y el jet lag no se coma tus
+              días de viaje. Armar un itinerario de viaje no es algo lineal. A
+              lo largo del proceso, lo vas a revisar y a ajustar, mil veces. Lo
+              vas a dar vuelta, vas a poner y a sacar items. Este proceso es
+              algo completamente dinámico y se contruye a partir de la
+              investigación para poder tomar las mejores decisiones.
+            </p>
+          </div>
+
+          <div align="center" id="pres">
+            <h4>Presupuesto</h4>
+            <p>
+              Un presupuesto es esencial en todo viaje ya que te da una idea
+              aproximada de cuanta plata tenes que juntar para poder hacerlo
+              realidad, es la forma más sencilla de aterrizar los sueños para
+              empezar a trabajar en ellos poco a poco. Va a variar segun el
+              destino, duración del viaje y las actividades que tengas pensado
+              hacer, pero siempre se puede ajustar a las necesidades de uno.
+              Luego de armar el marco del viaje, es importante calcular un monto
+              de gasto diario para empezar a tener numeros establecidos. Te
+              ayudamos a armarlo para que no tengas que romperte la cabeza con
+              los cálculos.
+            </p>
           </div>
         </section>
 
         <section>
-          <hr>
-            <div align="center" style="padding: 1cm;">
-                <p><h2>Contactanos para más!</h2></p>
-            </div>
+          <h2 class="section_final">Contactanos para más!</h2>
         </section>
-        <hr>
+      </main>
 
-        <!--Incio pie de pagina-->
-        <footer>
-          <div id="pie">
-            <nav>
-              <ul align="left">
-                <a href="index.html"><li>INICIO</li></a>
-                <a href="contacto.html"><li>CONTACTO</li></a>
-              </ul>
-            </nav>
-          </div>
-        </footer>
-        <!--Fin pie de pagina-->
-      </div>
+      <footer class="container-fluid__footer">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              ><img
+                src="../Imagenes/home.png"
+                alt="inicio"
+                height="60"
+                width="60"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html"
+              ><img
+                src="../Imagenes/contacto.png"
+                alt="contacto"
+                height="60"
+                width="60"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
