@@ -69,16 +69,16 @@ $bold-text: bold;
           width: 120px;
         }
         form {
-          padding: 0cm;
+          padding: 0.5cm;
+          grid-template-rows: repeat(1, 1fr);
           .form-row {
-            padding: 0cm;
+            padding: 0.5cm;
             .form__cuadro {
               margin: 1cm;
               padding: 0.5cm;
-
               h3 {
                 font-size: 15px;
-                padding: 0cm;
+                padding: 0.5cm;
               }
               .form-group {
                 padding: 0cm;
@@ -112,6 +112,7 @@ $bold-text: bold;
           width: 150px;
         }
         form {
+          grid-template-rows: repeat(1, 1fr);
           .form-row {
             padding: 0cm;
             h3 {
@@ -149,6 +150,7 @@ $bold-text: bold;
           width: 200px;
         }
         form {
+          grid-template-rows: repeat(1, 1fr);
           .form-row {
             h3 {
               font-size: $title/3;
@@ -186,6 +188,7 @@ $bold-text: bold;
           width: 250px;
         }
         form {
+          grid-template-rows: repeat(1, 1fr);
           .form-row {
             h3 {
               font-size: $title/2.5;
@@ -222,6 +225,7 @@ $bold-text: bold;
           width: 350px;
         }
         form {
+          grid-template-rows: repeat(1, 1fr);
           .form-row {
             h3 {
               font-size: $title/1.5;
