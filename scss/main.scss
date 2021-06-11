@@ -6,11 +6,11 @@ $bold-text: bold;
 
 //Imports//
 
-@use "index";
-@use "nosotros";
-@use "viajes";
-@use "tipstricks";
-@use "contacto";
+@import "index";
+@import "nosotros";
+@import "viajes";
+@import "tipstricks";
+@import "contacto";
 
 //SCSS whole website//
 

@@ -111,52 +111,73 @@
         </nav>
       </header>
 
-      <main>
+      <main class="main__contacto">
         <a href="viajes.html"
           ><img src="../Imagenes/galeria.jpg" class="img-fluid" alt="galeria"
         /></a>
         <h1>VIAJEMOS JUNTOS</h1>
         <h3>¡Contactanos!</h3>
 
-        <form align="center">
+        <form>
           <div class="cuadro1">
             <h3>Tus Datos</h3>
-            <div><input type="text" placeholder="Nombre" /></div>
-            <div><input type="text" placeholder="E-mail" /></div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Nombre"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="E-mail"
+              />
+            </div>
           </div>
 
           <div class="cuadro2">
             <h3>¿A donde queres viajar?</h3>
-            <select name="destino">
-              <option value="blank"></option>
-              <option value="0">Todavia no me decido</option>
-              <option value="1">Europa</option>
-              <option value="2">Asia</option>
-              <option value="3">América del Norte</option>
-              <option value="4">América del Sur</option>
-              <option value="5">Africa</option>
-              <option value="6">Oceania</option>
-              <option value="7">América Central</option>
-              <option value="8">Sudeste Asiatico</option>
-              <option value="9">Caribe</option>
-            </select>
+            <div class="form-floating">
+              <select class="form-select" id="floatingSelect">
+                <option value="blank"></option>
+                <option value="0">Todavia no me decido</option>
+                <option value="1">Europa</option>
+                <option value="2">Asia</option>
+                <option value="3">América del Norte</option>
+                <option value="4">América del Sur</option>
+                <option value="5">Africa</option>
+                <option value="6">Oceania</option>
+                <option value="7">América Central</option>
+                <option value="8">Sudeste Asiatico</option>
+                <option value="9">Caribe</option>
+              </select>
+            </div>
           </div>
 
           <div class="cuadro3">
             <h3>Contanos</h3>
-            <textarea
-              name="subject"
-              placeholder="Comentario"
-              rows="10"
-              cols="40"
-            ></textarea>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="6"
+                placeholder="Comentario"
+              ></textarea>
+            </div>
           </div>
+
           <div class="cuadro4">
-            <b>¿Quisieras recibir nuestra newsletter?</b>
-            <input type="checkbox" name="ok" value="1" />
-            <div style="padding-top: 1cm">
-              <input type="submit" value="Enviar" id="botones" />
-              <input type="reset" value="Limpiar" id="botones" />
+            <fieldset>
+              <b>¿Quisieras recibir nuestra newsletter?</b>
+              <input type="checkbox" name="ok" value="1" />
+            </fieldset>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-light">Submitir</button>
+              <button type="reset" class="btn btn-light">Limpiar</button>
             </div>
           </div>
         </form>

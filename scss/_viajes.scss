@@ -4,36 +4,50 @@ $bold-title: bolder;
 $bold-sub: 600;
 $bold-text: bold;
 
-.section__intro {
-  padding: 5cm;
-  padding-top: 0cm;
-  padding-bottom: 0cm;
-
-  p {
-    text-align: justify;
-    font-size: $title/3;
+.main__viajes {
+  h1 {
+    text-align: center;
+    font-size: $title;
+    font-weight: $bold-title;
   }
-}
-
-.section__main {
-  display: grid;
-  grid-template-columns: 20% auto 20%;
-  grid-template-areas: "blank table blank";
-  padding: 1cm;
-  margin: 0;
-  aside #blank {
-    grid-area: blank;
+  h3 {
+    text-align: center;
+    padding: 0.5cm;
+    font-weight: $bold-sub;
   }
-  table #table {
-    grid-area: table;
-    padding: 0;
+  .section__intro {
+    padding: 5cm;
+    padding-top: 0cm;
+    padding-bottom: 0cm;
+    h4 {
+      font-size: $title/2.5;
+    }
+    p {
+      text-align: justify;
+      font-size: $title/3;
+    }
+  }
+
+  .section__main {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-areas: "blank table blank";
+    padding: 1cm;
     margin: 0;
-  }
-  .carousel {
-    .carousel-item {
-      .btn {
-        a {
-          color: white;
+    aside #blank {
+      grid-area: blank;
+    }
+    table #table {
+      grid-area: table;
+      padding: 0;
+      margin: 0;
+    }
+    .carousel {
+      .carousel-item {
+        .btn {
+          a {
+            color: white;
+          }
         }
       }
     }
@@ -43,7 +57,7 @@ $bold-text: bold;
 //Media Queries//
 @media (max-width: 577px) {
   .container-fluid {
-    main {
+    .main__viajes {
       h1 {
         font-size: $title/2;
       }
@@ -71,7 +85,7 @@ $bold-text: bold;
 
 @media (min-width: 578px) {
   .container-fluid {
-    main {
+    .main__viajes {
       h1 {
         font-size: $title/2;
       }
@@ -99,7 +113,7 @@ $bold-text: bold;
 
 @media (min-width: 768px) {
   .container-fluid {
-    main {
+    .main__viajes {
       h1 {
         font-size: $title/1.3;
       }
@@ -124,7 +138,7 @@ $bold-text: bold;
 
 @media (min-width: 1024px) {
   .container-fluid {
-    main {
+    .main__viajes {
       h1 {
         font-size: $title;
       }
@@ -158,7 +172,7 @@ $bold-text: bold;
 
 @media (min-width: 1440px) {
   .container-fluid {
-    main {
+    .main__viajes {
       h1 {
         font-size: $title * 1.5;
       }
