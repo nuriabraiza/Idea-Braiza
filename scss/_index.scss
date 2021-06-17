@@ -4,18 +4,28 @@ $bold-title: bolder;
 $bold-sub: 600;
 $bold-text: bold;
 
+@mixin body {
+  background-image: url(../Imagenes/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@mixin titulos {
+  h1 {
+    text-align: center;
+    font-size: $title;
+    font-weight: $bold-title;
+  }
+  h3 {
+    text-align: center;
+    padding: 0.5cm;
+    font-weight: $bold-sub;
+  }
+}
+
 .container-fluid {
   main {
-    h1 {
-      text-align: center;
-      font-size: $title;
-      font-weight: $bold-title;
-    }
-    h3 {
-      text-align: center;
-      padding: 0.5cm;
-      font-weight: $bold-sub;
-    }
+    @include titulos;
 
     section {
       h4 {
@@ -30,6 +40,10 @@ $bold-text: bold;
         transform: scale(1.5, 1.5);
         opacity: 90%;
       }
+
+      img {
+        transition: transform 0.8s;
+      }
     }
     form {
       .form-row {
@@ -43,6 +57,7 @@ $bold-text: bold;
           padding: 2cm 3cm 2cm 3cm;
           .form-group {
             padding: 0.1cm;
+            margin: 0.4cm;
           }
         }
       }
