@@ -56,171 +56,191 @@ body {
       font-style: oblique;
       font-weight: $bold-title;
       font-size: 20px;
-    }
-  }
-  .container-fluid__footer {
-    border-top: 1px solid $main-color;
-    padding-top: 0.5cm;
-    padding-bottom: 0.5cm;
-
-    .nav-link {
-      color: $main-color;
-      img {
-        opacity: 50%;
-        margin: 0.2cm;
-      }
-      img:hover {
-        transform: scale(1.5, 1.5);
-        opacity: 90%;
+      .dropdown-menu {
+        background-image: url(./Imagenes/fondo2.jpg);
+        background-position: top left;
       }
     }
-  }
-}
+    .container-fluid__footer {
+      padding-top: 0.5cm;
+      padding-bottom: 0.5cm;
 
-//Media Queries MAIN//
-
-@media (max-width: 577px) {
-  header {
-    #logo {
-      height: 40px;
-      width: 60px;
-    }
-    .navbar-toggler-icon {
-      height: 20px;
-      width: 20px;
-    }
-    .navbar-nav {
       .nav-item {
-        .nav-link {
-          font-size: 15px;
-        }
-        .dropdown-item {
-          font-size: 15px;
-        }
-      }
-    }
-  }
-  .container-fluid__footer {
-    img {
-      opacity: 50%;
-      padding: 0;
-      margin: 0;
-      height: 35px;
-      width: 35px;
-    }
-  }
-}
-
-@media (min-width: 578px) {
-  header {
-    #logo {
-      height: 50px;
-      width: 70px;
-    }
-    .navbar-nav {
-      .nav-item {
-        .nav-link {
-          font-size: 20px;
-        }
-        .dropdown-menu {
-          background-image: url(./Imagenes/fondo2.jpg);
-          background-position: top left;
-          .dropdown-item {
-            font-size: 20px;
-            font-weight: $bold-sub;
-            color: $main-color;
+        a {
+          img {
+            opacity: 50%;
+            margin: 0.2cm;
+          }
+          img:hover {
+            transform: scale(1.5, 1.5);
+            opacity: 90%;
           }
         }
       }
     }
   }
-  .container-fluid__footer {
-    img {
-      opacity: 50%;
-      margin: 0.1cm;
-      height: 45px;
-      width: 45px;
-    }
-  }
-}
 
-@media (min-width: 768px) {
-  header {
-    #logo {
-      height: 50px;
-      width: 70px;
-    }
-    .navbar-nav {
-      .nav-item {
-        .nav-link {
-          font-size: 20px;
+  //Media Queries MAIN//
+
+  @media (max-width: 577px) {
+    header {
+      #logo {
+        height: 40px;
+        width: 60px;
+      }
+      .navbar-toggler-icon {
+        height: 20px;
+        width: 20px;
+      }
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            font-size: 15px;
+            .dropdown-menu {
+              background-image: url(./Imagenes/fondo2.jpg);
+              background-position: top left;
+              .dropdown-item {
+                font-size: 15px;
+              }
+            }
+          }
         }
-        .dropdown-item {
-          font-size: 20px;
+      }
+      .container-fluid__footer {
+        img {
+          opacity: 50%;
+          padding: 0;
+          margin: 0;
+          height: 35px;
+          width: 35px;
         }
       }
     }
-  }
-  .container-fluid__footer {
-    img {
-      opacity: 50%;
-      margin: 0.1cm;
-      height: 55px;
-      width: 55px;
-    }
-  }
-}
 
-@media (min-width: 1024px) {
-  header {
-    #logo {
-      height: 60px;
-      width: 80px;
-    }
-    .navbar-nav {
-      .nav-item {
-        .nav-link {
-          font-size: 20px;
+    @media (min-width: 578px) {
+      header {
+        #logo {
+          height: 50px;
+          width: 70px;
         }
-        .dropdown-item {
-          font-size: 20px;
+        .navbar-nav {
+          .nav-item {
+            .nav-link {
+              font-size: 20px;
+            }
+            .dropdown-menu {
+              background-image: url(./Imagenes/fondo2.jpg);
+              background-position: top left;
+              .dropdown-item {
+                font-size: 20px;
+                font-weight: $bold-sub;
+                color: $main-color;
+              }
+            }
+          }
+        }
+      }
+      .container-fluid__footer {
+        img {
+          opacity: 50%;
+          margin: 0.1cm;
+          height: 45px;
+          width: 45px;
         }
       }
     }
-  }
-  .container-fluid__footer {
-    img {
-      opacity: 50%;
-      margin: 0.1cm;
-      height: 65px;
-      width: 65px;
-    }
-  }
-}
 
-@media (min-width: 1440px) {
-  header {
-    #logo {
-      height: 60px;
-      width: 80px;
-    }
-    .navbar-nav {
-      .nav-item {
-        .nav-link {
-          font-size: 25px;
+    @media (min-width: 768px) {
+      header {
+        #logo {
+          height: 50px;
+          width: 70px;
         }
-        .dropdown-item {
-          font-size: 25px;
+        .navbar-nav {
+          .nav-item {
+            .nav-link {
+              font-size: 20px;
+            }
+            .dropdown-menu {
+              background-image: url(./Imagenes/fondo2.jpg);
+              background-position: top left;
+              .dropdown-item {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      .container-fluid__footer {
+        img {
+          opacity: 50%;
+          margin: 0.1cm;
+          height: 55px;
+          width: 55px;
         }
       }
     }
-  }
-  .container-fluid__footer {
-    img {
-      opacity: 50%;
-      margin: 0.3cm;
-      height: 70px;
-      width: 70px;
+
+    @media (min-width: 1024px) {
+      header {
+        #logo {
+          height: 60px;
+          width: 80px;
+        }
+        .navbar-nav {
+          .nav-item {
+            .nav-link {
+              font-size: 20px;
+            }
+            .dropdown-menu {
+              background-image: url(./Imagenes/fondo2.jpg);
+              background-position: top left;
+              .dropdown-item {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      .container-fluid__footer {
+        img {
+          opacity: 50%;
+          margin: 0.1cm;
+          height: 65px;
+          width: 65px;
+        }
+      }
+    }
+
+    @media (min-width: 1440px) {
+      header {
+        #logo {
+          height: 60px;
+          width: 80px;
+        }
+        .navbar-nav {
+          .nav-item {
+            .nav-link {
+              font-size: 25px;
+            }
+            .dropdown-menu {
+              background-image: url(./Imagenes/fondo2.jpg);
+              background-position: top left;
+              .dropdown-item {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+      .container-fluid__footer {
+        img {
+          opacity: 50%;
+          margin: 0.3cm;
+          height: 70px;
+          width: 70px;
+        }
+      }
     }
   }
 }

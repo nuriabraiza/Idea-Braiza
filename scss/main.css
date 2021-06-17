@@ -1132,43 +1132,47 @@ body {
   font-size: 20px;
 }
 
-.container-fluid .container-fluid__footer {
-  border-top: 1px solid #09365a;
+.container-fluid .navbar-collapse .nav-link .dropdown-menu {
+  background-image: url(./Imagenes/fondo2.jpg);
+  background-position: top left;
+}
+
+.container-fluid .navbar-collapse .container-fluid__footer {
   padding-top: 0.5cm;
   padding-bottom: 0.5cm;
 }
 
-.container-fluid .container-fluid__footer .nav-link {
-  color: #09365a;
-}
-
-.container-fluid .container-fluid__footer .nav-link img {
+.container-fluid .navbar-collapse .container-fluid__footer .nav-item a img {
   opacity: 50%;
   margin: 0.2cm;
 }
 
-.container-fluid .container-fluid__footer .nav-link img:hover {
+.container-fluid .navbar-collapse .container-fluid__footer .nav-item a img:hover {
   -webkit-transform: scale(1.5, 1.5);
           transform: scale(1.5, 1.5);
   opacity: 90%;
 }
 
 @media (max-width: 577px) {
-  header #logo {
+  .container-fluid header #logo {
     height: 40px;
     width: 60px;
   }
-  header .navbar-toggler-icon {
+  .container-fluid header .navbar-toggler-icon {
     height: 20px;
     width: 20px;
   }
-  header .navbar-nav .nav-item .nav-link {
+  .container-fluid header .navbar-nav .nav-item .nav-link {
     font-size: 15px;
   }
-  header .navbar-nav .nav-item .dropdown-item {
+  .container-fluid header .navbar-nav .nav-item .nav-link .dropdown-menu {
+    background-image: url(./Imagenes/fondo2.jpg);
+    background-position: top left;
+  }
+  .container-fluid header .navbar-nav .nav-item .nav-link .dropdown-menu .dropdown-item {
     font-size: 15px;
   }
-  .container-fluid__footer img {
+  .container-fluid header .container-fluid__footer img {
     opacity: 50%;
     padding: 0;
     margin: 0;
@@ -1177,24 +1181,24 @@ body {
   }
 }
 
-@media (min-width: 578px) {
-  header #logo {
+@media (max-width: 577px) and (min-width: 578px) {
+  .container-fluid header #logo {
     height: 50px;
     width: 70px;
   }
-  header .navbar-nav .nav-item .nav-link {
+  .container-fluid header .navbar-nav .nav-item .nav-link {
     font-size: 20px;
   }
-  header .navbar-nav .nav-item .dropdown-menu {
+  .container-fluid header .navbar-nav .nav-item .dropdown-menu {
     background-image: url(./Imagenes/fondo2.jpg);
     background-position: top left;
   }
-  header .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  .container-fluid header .navbar-nav .nav-item .dropdown-menu .dropdown-item {
     font-size: 20px;
     font-weight: 700;
     color: #09365a;
   }
-  .container-fluid__footer img {
+  .container-fluid .container-fluid__footer img {
     opacity: 50%;
     margin: 0.1cm;
     height: 45px;
@@ -1202,18 +1206,22 @@ body {
   }
 }
 
-@media (min-width: 768px) {
-  header #logo {
+@media (max-width: 577px) and (min-width: 768px) {
+  .container-fluid header #logo {
     height: 50px;
     width: 70px;
   }
-  header .navbar-nav .nav-item .nav-link {
+  .container-fluid header .navbar-nav .nav-item .nav-link {
     font-size: 20px;
   }
-  header .navbar-nav .nav-item .dropdown-item {
+  .container-fluid header .navbar-nav .nav-item .dropdown-menu {
+    background-image: url(./Imagenes/fondo2.jpg);
+    background-position: top left;
+  }
+  .container-fluid header .navbar-nav .nav-item .dropdown-menu .dropdown-item {
     font-size: 20px;
   }
-  .container-fluid__footer img {
+  .container-fluid .container-fluid__footer img {
     opacity: 50%;
     margin: 0.1cm;
     height: 55px;
@@ -1221,18 +1229,22 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
-  header #logo {
+@media (max-width: 577px) and (min-width: 1024px) {
+  .container-fluid header #logo {
     height: 60px;
     width: 80px;
   }
-  header .navbar-nav .nav-item .nav-link {
+  .container-fluid header .navbar-nav .nav-item .nav-link {
     font-size: 20px;
   }
-  header .navbar-nav .nav-item .dropdown-item {
+  .container-fluid header .navbar-nav .nav-item .dropdown-menu {
+    background-image: url(./Imagenes/fondo2.jpg);
+    background-position: top left;
+  }
+  .container-fluid header .navbar-nav .nav-item .dropdown-menu .dropdown-item {
     font-size: 20px;
   }
-  .container-fluid__footer img {
+  .container-fluid .container-fluid__footer img {
     opacity: 50%;
     margin: 0.1cm;
     height: 65px;
@@ -1240,18 +1252,22 @@ body {
   }
 }
 
-@media (min-width: 1440px) {
-  header #logo {
+@media (max-width: 577px) and (min-width: 1440px) {
+  .container-fluid header #logo {
     height: 60px;
     width: 80px;
   }
-  header .navbar-nav .nav-item .nav-link {
+  .container-fluid header .navbar-nav .nav-item .nav-link {
     font-size: 25px;
   }
-  header .navbar-nav .nav-item .dropdown-item {
+  .container-fluid header .navbar-nav .nav-item .dropdown-menu {
+    background-image: url(./Imagenes/fondo2.jpg);
+    background-position: top left;
+  }
+  .container-fluid header .navbar-nav .nav-item .dropdown-menu .dropdown-item {
     font-size: 25px;
   }
-  .container-fluid__footer img {
+  .container-fluid .container-fluid__footer img {
     opacity: 50%;
     margin: 0.3cm;
     height: 70px;
