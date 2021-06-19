@@ -29,6 +29,14 @@ $bold-text: bold;
         text-align: center;
         font-style: oblique;
       }
+      div {
+        .justify-content-md-center {
+          padding: 0;
+          .col-md-auto {
+            padding: 0;
+          }
+        }
+      }
 
       img:hover {
         transform: scale(1.5, 1.5);

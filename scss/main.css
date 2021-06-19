@@ -18,6 +18,14 @@
   font-style: oblique;
 }
 
+.container-fluid main section div .justify-content-md-center {
+  padding: 0;
+}
+
+.container-fluid main section div .justify-content-md-center .col-md-auto {
+  padding: 0;
+}
+
 .container-fluid main section img:hover {
   -webkit-transform: scale(1.5, 1.5);
           transform: scale(1.5, 1.5);
