@@ -4,6 +4,12 @@ $bold-title: bolder;
 $bold-sub: 600;
 $bold-text: bold;
 
+@mixin body {
+  background-image: url(../Imagenes/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 //Imports//
 
 @import "index";
@@ -12,7 +18,7 @@ $bold-text: bold;
 @import "tipstricks";
 @import "contacto";
 
-//SCSS whole website//
+//SCSS header/footer//
 
 * {
   margin: 0;
