@@ -29,12 +29,27 @@ $bold-text: bold;
         text-align: center;
         font-style: oblique;
       }
-      div {
-        .justify-content-md-center {
-          padding: 0;
-          .col-md-auto {
-            padding: 0;
+
+      .row {
+        margin-left: 0cm;
+        margin-right: 0cm;
+
+        .centro {
+          padding-right: 0cm;
+          padding-left: 0cm;
+          margin-right: 0cm;
+          margin-left: 0cm;
+          .table__img-fluid {
+            padding-left: 0cm;
+            padding-right: 0cm;
           }
+        }
+
+        .lateral {
+          padding-right: 0cm;
+          padding-left: 0cm;
+          margin-right: 0cm;
+          margin-left: 0cm;
         }
       }
 
