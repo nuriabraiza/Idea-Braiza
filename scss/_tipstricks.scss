@@ -7,7 +7,10 @@ $bold-text: bold;
 .container-fluid {
   .main__tt {
     @include titulos;
-
+    .galeria {
+      width: 100vw;
+      height: 200px;
+    }
     section {
       h4 {
         font-weight: $bold-text;
@@ -110,6 +113,10 @@ $bold-text: bold;
 @media (max-width: 577px) {
   .container-fluid {
     .main__tt {
+      .galeria {
+        height: 50px;
+        width: 100%;
+      }
       h1 {
         font-size: $title/2;
       }
@@ -144,6 +151,10 @@ $bold-text: bold;
 @media (min-width: 578px) {
   .container-fluid {
     .main__tt {
+      .galeria {
+        height: 100px;
+        width: 100%;
+      }
       h1 {
         font-size: $title/1.5;
       }
@@ -178,6 +189,10 @@ $bold-text: bold;
 @media (min-width: 768px) {
   .container-fluid {
     .main__tt {
+      .galeria {
+        height: 100px;
+        width: 100%;
+      }
       h1 {
         font-size: $title/1.3;
       }
@@ -208,6 +223,10 @@ $bold-text: bold;
 @media (min-width: 1024px) {
   .container-fluid {
     .main__tt {
+      .galeria {
+        height: 150px;
+        width: 100%;
+      }
       h1 {
         font-size: $title;
       }
@@ -239,6 +258,10 @@ $bold-text: bold;
 @media (min-width: 1440px) {
   .container-fluid {
     .main__tt {
+      .galeria {
+        height: 200px;
+        width: 100%;
+      }
       h1 {
         font-size: $title * 1.5;
       }
