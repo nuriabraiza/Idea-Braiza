@@ -43,6 +43,9 @@ $bold-text: bold;
             padding-left: 0cm;
             padding-right: 0cm;
           }
+          .img__scale {
+            display: none;
+          }
         }
 
         .lateral {
@@ -75,6 +78,11 @@ $bold-text: bold;
           .form-group {
             padding: 0.1cm;
             margin: 0.4cm;
+          }
+          button {
+            color: $main-color;
+            font-weight: $bold-text;
+            margin: 0.5cm;
           }
         }
       }

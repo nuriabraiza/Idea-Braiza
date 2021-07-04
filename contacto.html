@@ -131,21 +131,15 @@
         <h3>Escribinos y te ayudamos</h3>
 
         <form>
+          <aside class="blank"></aside>
           <div class="cuadro1">
             <h3>Tus Datos</h3>
             <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Nombre"
-              />
+              <input type="text" class="form-control" placeholder="Nombre" />
             </div>
             <div class="mb-3">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="E-mail"
-              />
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" />
             </div>
           </div>
 
@@ -186,10 +180,15 @@
               <input type="checkbox" name="ok" value="1" />
             </fieldset>
             <div class="col-auto">
-              <button type="submit" class="btn btn-light">Submitir</button>
-              <button type="reset" class="btn btn-light">Limpiar</button>
+              <button type="submit" class="btn btn-light" value="Submit">
+                Submitir
+              </button>
+              <button type="reset" class="btn btn-light" value="Reset">
+                Limpiar
+              </button>
             </div>
           </div>
+          <aside class="blank"></aside>
         </form>
       </main>
 

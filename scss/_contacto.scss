@@ -9,61 +9,50 @@ $bold-text: bold;
     @include titulos;
 
     form {
+      text-align: center;
       font-weight: $bold-text;
       color: $main-color;
-      display: grid;
-      grid-template-rows: repeat(4, 400px);
-      grid-template-areas:
-        "cuadro1"
-        "cuadro2"
-        "cuadro3"
-        "cuadro4";
-      justify-content: center;
-      align-content: center;
+      border: 1px solid rgb(9, 54, 90);
 
       .cuadro1 {
-        margin: 1cm;
-        padding: 2cm;
         text-align: center;
         font-size: 20px;
-        border: 1px solid rgb(9, 54, 90);
-        grid-area: cuadro1;
+        padding-left: 2cm;
+        padding-right: 2cm;
+        padding: 1cm;
       }
 
       .cuadro2 {
-        margin: 1cm;
-        padding: 2.5cm;
         text-align: center;
         font-family: "Work Sans", sans-serif;
         color: rgb(9, 54, 90);
-        border: 1px solid rgb(9, 54, 90);
-        grid-area: cuadro2;
+        padding-left: 2cm;
+        padding-right: 2cm;
+        padding: 1cm;
       }
 
       .cuadro3 {
-        margin: 1cm;
-        padding: 1cm;
         text-align: center;
         font-family: "Work Sans", sans-serif;
         color: rgb(9, 54, 90);
-        border: 1px solid rgb(9, 54, 90);
-        grid-area: cuadro3;
+        padding-left: 2cm;
+        padding-right: 2cm;
+        padding: 1cm;
       }
 
       .cuadro4 {
-        margin: 1cm;
-        padding: 3cm;
         text-align: center;
         font-family: "Work Sans", sans-serif;
         color: rgb(9, 54, 90);
-        border: 1px solid rgb(9, 54, 90);
         display: inline;
+        padding-left: 2cm;
+        padding-right: 2cm;
+        padding: 1cm;
         button {
           color: $main-color;
           font-weight: $bold-text;
           margin: 0.5cm;
         }
-        grid-area: cuadro4;
       }
     }
   }

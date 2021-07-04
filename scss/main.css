@@ -35,6 +35,10 @@
   padding-right: 0cm;
 }
 
+.container-fluid main section .row .centro .img__scale {
+  display: none;
+}
+
 .container-fluid main section .row .lateral {
   padding-right: 0cm;
   padding-left: 0cm;
@@ -73,6 +77,12 @@
 .container-fluid main form .form-row .form__cuadro .form-group {
   padding: 0.1cm;
   margin: 0.4cm;
+}
+
+.container-fluid main form .form-row .form__cuadro button {
+  color: #09365a;
+  font-weight: bold;
+  margin: 0.5cm;
 }
 
 @media (max-width: 577px) {
@@ -917,66 +927,46 @@
 }
 
 .container-fluid .main__contacto form {
+  text-align: center;
   font-weight: bold;
   color: #09365a;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (400px)[4];
-      grid-template-rows: repeat(4, 400px);
-      grid-template-areas: "cuadro1" "cuadro2" "cuadro3" "cuadro4";
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  border: 1px solid #09365a;
 }
 
 .container-fluid .main__contacto form .cuadro1 {
-  margin: 1cm;
-  padding: 2cm;
   text-align: center;
   font-size: 20px;
-  border: 1px solid #09365a;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: cuadro1;
+  padding-left: 2cm;
+  padding-right: 2cm;
+  padding: 1cm;
 }
 
 .container-fluid .main__contacto form .cuadro2 {
-  margin: 1cm;
-  padding: 2.5cm;
   text-align: center;
   font-family: "Work Sans", sans-serif;
   color: #09365a;
-  border: 1px solid #09365a;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: cuadro2;
+  padding-left: 2cm;
+  padding-right: 2cm;
+  padding: 1cm;
 }
 
 .container-fluid .main__contacto form .cuadro3 {
-  margin: 1cm;
-  padding: 1cm;
   text-align: center;
   font-family: "Work Sans", sans-serif;
   color: #09365a;
-  border: 1px solid #09365a;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: cuadro3;
+  padding-left: 2cm;
+  padding-right: 2cm;
+  padding: 1cm;
 }
 
 .container-fluid .main__contacto form .cuadro4 {
-  margin: 1cm;
-  padding: 3cm;
   text-align: center;
   font-family: "Work Sans", sans-serif;
   color: #09365a;
-  border: 1px solid #09365a;
   display: inline;
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: cuadro4;
+  padding-left: 2cm;
+  padding-right: 2cm;
+  padding: 1cm;
 }
 
 .container-fluid .main__contacto form .cuadro4 button {
