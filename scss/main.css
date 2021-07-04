@@ -55,31 +55,17 @@
 .container-fluid main section .table__img-fluid:hover ~ .img__scale {
   display: block;
   -webkit-transform: scale(1.3, 1.3);
-  transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
 }
 
 .container-fluid main section .table__img-fluid:hover {
   display: none;
 }
 
-.container-fluid main section .table__img-fluid {
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
-}
-
-.container-fluid main section .img__scale {
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
-}
-
 .container-fluid main form .form-row {
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container-fluid main form .form-row .form__cuadro {
@@ -122,8 +108,8 @@
   }
   .container-fluid .main__index section form {
     padding: 0.5cm;
-    -ms-grid-rows: (1fr) [1];
-    grid-template-rows: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
   }
   .container-fluid .main__index section form .form-row {
     padding: 0.5cm;
@@ -136,23 +122,10 @@
     font-size: 15px;
     padding: 0.5cm;
   }
-  .container-fluid
-    .main__index
-    section
-    form
-    .form-row
-    .form__cuadro
-    .form-group {
+  .container-fluid .main__index section form .form-row .form__cuadro .form-group {
     padding: 0cm;
   }
-  .container-fluid
-    .main__index
-    section
-    form
-    .form-row
-    .form__cuadro
-    .form-group
-    .form-control {
+  .container-fluid .main__index section form .form-row .form__cuadro .form-group .form-control {
     padding: 0cm;
   }
 }
@@ -176,8 +149,8 @@
     width: 150px;
   }
   .container-fluid .main__index section form {
-    -ms-grid-rows: (1fr) [1];
-    grid-template-rows: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
   }
   .container-fluid .main__index section form .form-row {
     padding: 0cm;
@@ -189,13 +162,7 @@
   .container-fluid .main__index section form .form-row .form-group {
     padding: 0cm;
   }
-  .container-fluid
-    .main__index
-    section
-    form
-    .form-row
-    .form-group
-    .form-control {
+  .container-fluid .main__index section form .form-row .form-group .form-control {
     padding: 0cm;
   }
 }
@@ -219,8 +186,8 @@
     width: 200px;
   }
   .container-fluid .main__index section form {
-    -ms-grid-rows: (1fr) [1];
-    grid-template-rows: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
   }
   .container-fluid .main__index section form .form-row h3 {
     font-size: 23.33333px;
@@ -229,13 +196,7 @@
   .container-fluid .main__index section form .form-row .form-group {
     padding: 0cm;
   }
-  .container-fluid
-    .main__index
-    section
-    form
-    .form-row
-    .form-group
-    .form-control {
+  .container-fluid .main__index section form .form-row .form-group .form-control {
     padding: 0cm;
   }
 }
@@ -260,20 +221,14 @@
     width: 250px;
   }
   .container-fluid .main__index section form {
-    -ms-grid-rows: (1fr) [1];
-    grid-template-rows: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
   }
   .container-fluid .main__index section form .form-row h3 {
     font-size: 28px;
     padding: 1cm;
   }
-  .container-fluid
-    .main__index
-    section
-    form
-    .form-row
-    .form-group
-    .form-control {
+  .container-fluid .main__index section form .form-row .form-group .form-control {
     padding: 0.3cm;
   }
 }
@@ -298,20 +253,14 @@
     width: 350px;
   }
   .container-fluid .main__index section form {
-    -ms-grid-rows: (1fr) [1];
-    grid-template-rows: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
   }
   .container-fluid .main__index section form .form-row h3 {
     font-size: 46.66667px;
     padding: 1cm;
   }
-  .container-fluid
-    .main__index
-    section
-    form
-    .form-row
-    .form-group
-    .form-control {
+  .container-fluid .main__index section form .form-row .form-group .form-control {
     padding: 0.4cm;
   }
 }
@@ -350,12 +299,7 @@
   font-size: 23.33333px;
 }
 
-.container-fluid
-  .main__nosotros
-  .accordion
-  .accordion-item
-  .accordion-header__title
-  button {
+.container-fluid .main__nosotros .accordion .accordion-item .accordion-header__title button {
   font-size: 35px;
   color: #09365a;
   font-weight: 600;
@@ -366,14 +310,14 @@
 .container-fluid .main__nosotros .section-big {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (250px) [3];
-  grid-template-rows: repeat(3, 250px);
-  grid-template-areas: "Q1 Q1" "Q2 Q2" "Q3 Q3";
+  -ms-grid-rows: (250px)[3];
+      grid-template-rows: repeat(3, 250px);
+      grid-template-areas: "Q1 Q1" "Q2 Q2" "Q3 Q3";
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-line-pack: space-evenly;
-  align-content: space-evenly;
+      align-content: space-evenly;
 }
 
 .container-fluid .main__nosotros .section-big #uno {
@@ -455,19 +399,10 @@
   .container-fluid .main__nosotros .section-small .accordion {
     padding: 0.5cm;
   }
-  .container-fluid
-    .main__nosotros
-    .section-small
-    .accordion
-    .accordion-header__title
-    .accordion-button {
+  .container-fluid .main__nosotros .section-small .accordion .accordion-header__title .accordion-button {
     font-size: 20px;
   }
-  .container-fluid
-    .main__nosotros
-    .section-small
-    .accordion
-    .accordion-body__text {
+  .container-fluid .main__nosotros .section-small .accordion .accordion-body__text {
     font-size: 15.55556px;
   }
   .container-fluid .main__nosotros .section-big {
@@ -494,19 +429,10 @@
   .container-fluid .main__nosotros .section-small .accordion {
     padding: 0.8cm;
   }
-  .container-fluid
-    .main__nosotros
-    .section-small
-    .accordion
-    .accordion-header__title
-    .accordion-button {
+  .container-fluid .main__nosotros .section-small .accordion .accordion-header__title .accordion-button {
     font-size: 20px;
   }
-  .container-fluid
-    .main__nosotros
-    .section-small
-    .accordion
-    .accordion-body__text {
+  .container-fluid .main__nosotros .section-small .accordion .accordion-body__text {
     font-size: 15.55556px;
   }
   .container-fluid .main__nosotros .section-big {
@@ -530,12 +456,7 @@
   .container-fluid .main__nosotros h3 {
     font-size: 28px;
   }
-  .container-fluid
-    .main__nosotros
-    .section-small
-    .accordion
-    .accordion-header__title
-    .accordion-button {
+  .container-fluid .main__nosotros .section-small .accordion .accordion-header__title .accordion-button {
     font-size: 23.33333px;
   }
   .container-fluid .main__nosotros .section-big {
@@ -596,8 +517,8 @@
   .container-fluid .main__nosotros .section-big {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (250px) [3];
-    grid-template-rows: repeat(3, 250px);
+    -ms-grid-rows: (250px)[3];
+        grid-template-rows: repeat(3, 250px);
   }
   .container-fluid .main__nosotros .section-big h4 {
     font-size: 28px;
@@ -648,8 +569,8 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% auto 20%;
-  grid-template-columns: 20% auto 20%;
-  grid-template-areas: "blank table blank";
+      grid-template-columns: 20% auto 20%;
+      grid-template-areas: "blank table blank";
   padding: 1cm;
   margin: 0;
 }
@@ -777,13 +698,7 @@
   .container-fluid .main__viajes .section__main {
     padding-bottom: 0.5cm;
   }
-  .container-fluid
-    .main__viajes
-    .section__main
-    .carousel
-    .carousel-item
-    .btn
-    a {
+  .container-fluid .main__viajes .section__main .carousel .carousel-item .btn a {
     font-size: 20px;
   }
 }
@@ -847,12 +762,7 @@
   font-size: 23.33333px;
 }
 
-.container-fluid
-  .main__tt
-  .accordion
-  .accordion-item
-  .accordion-header__title
-  button {
+.container-fluid .main__tt .accordion .accordion-item .accordion-header__title button {
   font-size: 35px;
   color: #09365a;
   font-weight: 600;
@@ -863,16 +773,16 @@
 .container-fluid .main__tt .section-large {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (400px) [4];
-  grid-template-rows: repeat(4, 400px);
-  -ms-grid-columns: (1fr) [3];
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "t1 t1 t1" "t2 t2 t2" "t3 t3 t3" "t4 t4 t4";
+  -ms-grid-rows: (400px)[4];
+      grid-template-rows: repeat(4, 400px);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "t1 t1 t1" "t2 t2 t2" "t3 t3 t3" "t4 t4 t4";
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-line-pack: space-evenly;
-  align-content: space-evenly;
+      align-content: space-evenly;
 }
 
 .container-fluid .main__tt .section-large #viajar {
@@ -972,12 +882,7 @@
   .container-fluid .main__tt .section-small .accordion {
     padding: 0.5cm;
   }
-  .container-fluid
-    .main__tt
-    .section-small
-    .accordion
-    .accordion-header__title
-    .accordion-button {
+  .container-fluid .main__tt .section-small .accordion .accordion-header__title .accordion-button {
     font-size: 20px;
   }
   .container-fluid .main__tt .section-small .accordion .accordion-body__text {
@@ -1007,12 +912,7 @@
   .container-fluid .main__tt .section-small .accordion {
     padding: 0.8cm;
   }
-  .container-fluid
-    .main__tt
-    .section-small
-    .accordion
-    .accordion-header__title
-    .accordion-button {
+  .container-fluid .main__tt .section-small .accordion .accordion-header__title .accordion-button {
     font-size: 20px;
   }
   .container-fluid .main__tt .section-small .accordion .accordion-body__text {
@@ -1039,12 +939,7 @@
   .container-fluid .main__tt h3 {
     font-size: 28px;
   }
-  .container-fluid
-    .main__tt
-    .section-small
-    .accordion
-    .accordion-header__title
-    .accordion-button {
+  .container-fluid .main__tt .section-small .accordion .accordion-header__title .accordion-button {
     font-size: 23.33333px;
   }
   .container-fluid .main__tt .section-large {
@@ -1105,8 +1000,8 @@
   .container-fluid .main__tt .section-large {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (350px) [4];
-    grid-template-rows: repeat(4, 350px);
+    -ms-grid-rows: (350px)[4];
+        grid-template-rows: repeat(4, 350px);
   }
   .container-fluid .main__tt .section-large h4 {
     font-size: 28px;
@@ -1202,8 +1097,8 @@
   }
   .container-fluid .main__contacto form {
     margin: 0.5cm;
-    -ms-grid-rows: (350px) [4];
-    grid-template-rows: repeat(4, 350px);
+    -ms-grid-rows: (350px)[4];
+        grid-template-rows: repeat(4, 350px);
   }
   .container-fluid .main__contacto form h3 {
     font-size: 20px;
@@ -1235,8 +1130,8 @@
   }
   .container-fluid .main__contacto form {
     margin: 0.5cm;
-    -ms-grid-rows: (350px) [4];
-    grid-template-rows: repeat(4, 350px);
+    -ms-grid-rows: (350px)[4];
+        grid-template-rows: repeat(4, 350px);
   }
   .container-fluid .main__contacto form h3 {
     font-size: 20px;
@@ -1268,8 +1163,8 @@
   }
   .container-fluid .main__contacto form {
     margin: 0.5cm;
-    -ms-grid-rows: (350px) [4];
-    grid-template-rows: repeat(4, 350px);
+    -ms-grid-rows: (350px)[4];
+        grid-template-rows: repeat(4, 350px);
   }
   .container-fluid .main__contacto form h3 {
     font-size: 23.33333px;
@@ -1296,8 +1191,8 @@
   }
   .container-fluid .main__contacto form {
     margin: 0.5cm;
-    -ms-grid-rows: (350px) [4];
-    grid-template-rows: repeat(4, 350px);
+    -ms-grid-rows: (350px)[4];
+        grid-template-rows: repeat(4, 350px);
   }
   .container-fluid .main__contacto form h3 {
     font-size: 28px;
@@ -1323,8 +1218,8 @@
     font-weight: 700;
   }
   .container-fluid .main__contacto form {
-    -ms-grid-rows: (400px) [4];
-    grid-template-rows: repeat(4, 400px);
+    -ms-grid-rows: (400px)[4];
+        grid-template-rows: repeat(4, 400px);
   }
   .container-fluid .main__contacto form h3 {
     font-size: 35px;
@@ -1362,13 +1257,13 @@ body {
 
 .container-fluid nav a #logo {
   -webkit-animation-name: logo;
-  animation-name: logo;
+          animation-name: logo;
   -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+          animation-iteration-count: 1;
   -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 @-webkit-keyframes logo {
@@ -1391,8 +1286,8 @@ body {
 
 .container-fluid .navbar-collapse {
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .container-fluid .navbar-collapse .nav-link {
@@ -1417,14 +1312,9 @@ body {
   margin: 0.2cm;
 }
 
-.container-fluid
-  .navbar-collapse
-  .container-fluid__footer
-  .nav-item
-  a
-  img:hover {
+.container-fluid .navbar-collapse .container-fluid__footer .nav-item a img:hover {
   -webkit-transform: scale(1.5, 1.5);
-  transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
   opacity: 90%;
 }
 
@@ -1444,13 +1334,7 @@ body {
     background-image: url(./Imagenes/fondo2.jpg);
     background-position: top left;
   }
-  .container-fluid
-    header
-    .navbar-nav
-    .nav-item
-    .nav-link
-    .dropdown-menu
-    .dropdown-item {
+  .container-fluid header .navbar-nav .nav-item .nav-link .dropdown-menu .dropdown-item {
     font-size: 15px;
   }
   .container-fluid header .container-fluid__footer img {
